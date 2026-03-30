@@ -1,15 +1,36 @@
+# Built outputs
 *.iml
+/build
+/app/build
+/captures
+
+# Gradle
 .gradle
-/local.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# Local config — contains SDK path, never commit
+local.properties
+
+# Android Studio / IntelliJ
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
+/.idea/.gitignore
+
+# Signing — keep keystores and signing config out of source control
+*.jks
+*.keystore
+keystore.properties
+
+# Native build artefacts
 .externalNativeBuild
 .cxx
-local.properties
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
